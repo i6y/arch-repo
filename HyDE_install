@@ -1,0 +1,9 @@
+sudo pacman -S bluetui
+sudo systemctl enable NetworkManager.service
+sudo systemctl enable iwd.service
+sudo systemctl enable bluetooth.service
+
+sudo pacman -S --needed git base-devel
+git clone --depth 1 https://github.com/HyDE-Project/HyDE ~/HyDE
+cd ~/HyDE/Scripts
+./install.sh
